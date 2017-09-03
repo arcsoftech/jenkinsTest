@@ -7,3 +7,8 @@
  pm2 restart www
  exit       
 EOF
+
+cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
+echo "Arcsoftech@2894" | sudo -S git pull
+echo "Arcsoftech@2894" | sudo -S npm install 
+echo "Arcsoftech@2894" | sudo -S pm2 restart www
