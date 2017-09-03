@@ -1,11 +1,9 @@
 -#!/bin/sh      
- <<EOF
-cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
-sudo git pull
-send Arcsoftech@2894\r    
-sudo npm install
-send Arcsoftech@2894\r  
-sudo pm2 restart www
-send Arcsoftech@2894\r 
+ ssh -tt arcsoftech@52.66.102.52 <<EOF
+ send Arcsoftech@2894\r 
+ cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
+ git pull       
+ npm install --production       
+ pm2 restart www
  exit       
 EOF
