@@ -1,4 +1,7 @@
-#!/bin/sh          
+-#!/bin/sh      
+ ssh arcsoftech@52.66.102.52 <<EOF
+ echo "Expect password"
+ send Arcsoftech@2894\r 
  cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
  git pull       
  npm install --production       
