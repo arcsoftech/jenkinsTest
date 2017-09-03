@@ -1,0 +1,7 @@
+-#!/bin/sh          
+ cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
+ git pull       
+ npm install --production       
+ pm2 restart www
+ exit       
+EOF
