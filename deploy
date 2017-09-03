@@ -1,6 +1,5 @@
 -#!/bin/sh      
- ssh arcsoftech@52.66.102.52 <<EOF
- echo "Expect password"
+ ssh -tt arcsoftech@52.66.102.52 <<EOF
  send Arcsoftech@2894\r 
  cd /home/arcsoftech/BotFramework-Advil/jenkinsTest/jenkinsTest 
  git pull       
