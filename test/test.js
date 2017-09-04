@@ -3,10 +3,10 @@ var should = require("should");
 
 // This agent refers to PORT where the program is running.
 
-var server = supertest.agent("http://52.66.102.52:5000");
+var server = supertest.agent("http://52.66.102.42:3000");
 // UNIT test begin
 
-describe("SAMPLE unit test",function(){
+describe("SAMPLE unit test For jenkins",function(){
 
   // #1 should return home page
   it("should return home page",function(done){
